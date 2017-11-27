@@ -16,8 +16,7 @@ Vagrant.configure("2") do |config|
   # config.vm.box = "dummy"
   #
   # config.vm.provider :aws do |aws, override|
-  #   aws.access_key_id = "AKIAJIGDXO4G5KYA3NQQ"
-  #   aws.secret_access_key = "E+IcG8Mi0NflwVQa+n74zxFhojaNi05Ic16eDZgR"
+
   #   #aws.session_token = ""
   #   aws.keypair_name = "ategix-sbx-key"
   #
