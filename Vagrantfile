@@ -13,18 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "ubuntu/xenial64"
-  # config.vm.box = "dummy"
-  #
-  # config.vm.provider :aws do |aws, override|
 
-  #   #aws.session_token = ""
-  #   aws.keypair_name = "ategix-sbx-key"
-  #
-  #   aws.ami = "ami-da05a4a0"
-  #
-  #   override.ssh.username = "ubuntu"
-  #   override.ssh.private_key_path = "/Users/gianmdicarlo/Documents/Keys/ategix-sbx-key.pem"
-  # end
 
   config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.network "private_network", ip: "192.168.33.10"
