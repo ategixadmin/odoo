@@ -36,7 +36,7 @@ class WebsitePayment(http.Controller):
             env['payment.acquirer'].search([('website_published', '=', True), ('company_id', '=', user.company_id.id)])[0].id
 
         acquirer = env['payment.acquirer'].with_context(submit_class='btn btn-primary pull-right',
-                                                        submit_txt=_('Pay Now TEST')).browse(acquirer_id)
+                                                        submit_txt=_('Pay Now')).browse(acquirer_id)
         # auto-increment reference with a number suffix if the reference already exists
         reference = request.env['payment.transaction'].get_next_reference(reference)
 
