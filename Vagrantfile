@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
     aws.access_key_id = "YOUR KEY"
     aws.secret_access_key = "YOUR SECRET KEY"
     aws.keypair_name = "KEYPAIR NAME"
-sdfs
+    TESTING GIT IGNORE
     aws.ami = "ami-7747d01e"
 
     override.ssh.username = "ubuntu"
