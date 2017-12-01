@@ -12,11 +12,22 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "ubuntu/xenial64"
+  # config.vm.box = "ubuntu/xenial64"
+  config.vm.box = "dummy"
 
+  config.vm.provider :aws do |aws, override|
+    aws.access_key_id = "YOUR KEY"
+    aws.secret_access_key = "YOUR SECRET KEY"
+    aws.keypair_name = "KEYPAIR NAME"
+
+    aws.ami = "ami-7747d01e"
+
+    override.ssh.username = "ubuntu"
+    override.ssh.private_key_path = "PATH TO YOUR PRIVATE KEY"
+  end
 
   config.vm.provision :shell, path: "bootstrap.sh"
-  config.vm.network "private_network", ip: "192.168.33.10"
+  # config.vm.network "private_network", ip: "192.168.33.10"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs

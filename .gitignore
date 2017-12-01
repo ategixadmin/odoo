@@ -40,3 +40,4 @@ setup/win32/static/postgresql*.exe
 /src/
 wkhtmltox-0.12.1_linux-trusty-amd64.deb
 ubuntu-xenial-16.04-cloudimg-console.log
+Vagrantfile

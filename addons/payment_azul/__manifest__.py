@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Authorize.Net Payment Acquirer',
+    'name': 'Azul Payment Acquirer',
     'category': 'Accounting',
-    'summary': 'Payment Acquirer: Authorize.net Implementation',
+    'summary': 'Payment Acquirer: Azul Implementation',
     'version': '1.0',
-    'description': """Authorize.Net Payment Acquirer""",
+    'description': """Azul Payment Acquirer""",
     'depends': ['payment'],
     'data': [
         'views/payment_views.xml',
